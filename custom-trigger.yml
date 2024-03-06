@@ -15,4 +15,4 @@ jobs:
         run: | 
            echo "This was triggered by a custom event from some machine"
            echo "Closing off"
-           echo "Blakes Trigger"
+           echo "Noors Trigger"
