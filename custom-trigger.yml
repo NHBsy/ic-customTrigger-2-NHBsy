@@ -1,0 +1,18 @@
+name: Custom trigger
+
+on:
+  push:
+    branches:
+      - main
+  repository_dispatch:
+    types: [test_result]
+
+jobs:
+  custom_trigger_job:
+    runs-on: ubuntu-latest 
+    steps:
+      - name: Custom trigger event
+        run: | 
+           echo "This was triggered by a custom event from some machine"
+           echo "Closing off"
+           echo "Blakes Trigger"
